@@ -8,11 +8,11 @@
 - http://localhost:3333/ <br/>
 
 ### Create Driver:
-- POST - http://localhost:3333/driver
-body:{
-		"name":"some name",
+- POST - http://localhost:3333/driver <br/>
+body:{ <br/>
+    "name":"some name", <br/>
     "surName": "all names that you want", <br/>
-     "CPF": 12345678910, `this field need to be only number and its need have just 11 numbers`
+     "CPF": 12345678910, `this field need to be only number and its need have just 11 numbers` <br/>
      "status":"Ativo", `even you dont send, the application will save Ativo that is the standart value` <br/> 
     "vehicles":[ "all", "vehicles", "you want" ] `you can send all veicles ID's you want, but need to be a valid ID `<br/>
 } <br/>
@@ -26,24 +26,24 @@ no body <br/>
 
 ### Create Vehicle:
 - POST - http://localhost:3333/vehicle <br/>
-body:{
-		"renavam": "123",
-    "licensePlate": "123",
-    "owner":"nothing or some valid full name registered in Drivers"
+body:{ <br/>
+		"renavam": "123", <br/>
+    "licensePlate": "123", <br/>
+    "owner":"nothing or some valid full name registered in Drivers" <br/>
 }<br/>
 `notes: the owner need to be void or a valid name registered on DataBase` <br/>
 
 
 ### GET Vehicle:
 - GET - http://localhost:3333/getVehicle <br/>
-no body
+no body <br/>
 `notes: this endpoint will show all vehicles` <br/>
 
 ### ADD Vehicle to Driver:
-- POST - http://localhost:3333/addVehicle
-body:{
-	"fullName": " some full name",
-	"id": "some vehicle id"
+- POST - http://localhost:3333/addVehicle <br/>
+body:{ <br/>
+	"fullName": " some full name", <br/>
+	"id": "some vehicle id" <br/>
   } <br/>
   `notes: the name and id must to be a valid and exists on data base` <br/>
   
