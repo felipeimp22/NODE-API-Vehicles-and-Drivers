@@ -16,17 +16,17 @@
 
 
 ### Create Vehicle:
-- POST - http://localhost:3333/vehicle
+- POST - http://localhost:3333/vehicle <br/>
 body:{
 		"renavam": "123",
     "licensePlate": "123",
     "owner":"felipe imperio"
-}
+}<br/>
 `notes: the owner need to be void or a valid name registered on DataBase`
 
 
 ### GET Vehicle:
-- GET - http://localhost:3333/getVehicle
+- GET - http://localhost:3333/getVehicle <br/>
 no body
 `notes: this endpoint will show all vehicles`
 
@@ -35,5 +35,5 @@ no body
 body:{
 	"fullName": " some full name",
 	"id": "some vehicle id"
-  }
+  } <br/>
   `notes: the name and id must to be a valid and exists on data base`
